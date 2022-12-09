@@ -23,7 +23,7 @@ class HomeApp extends StatelessWidget {
                   child: Row(children: [
                     icons(Icons.camera_alt_outlined),
                     icons(Icons.search),
-                    icons(Icons.menu),
+                    icons(Icons.more_vert_outlined),
                   ]),
                 )
               ],
