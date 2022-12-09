@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsappclone/chats.dart';
 import 'package:whatsappclone/widget_classes.dart';
 
 class HomeApp extends StatelessWidget {
@@ -6,7 +7,7 @@ class HomeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => DefaultTabController(
-        length: 4,
+        length: 3,
         child: Scaffold(
           backgroundColor: backgroundColor,
           appBar: AppBar(
@@ -40,7 +41,7 @@ class HomeApp extends StatelessWidget {
             ),
           ),
           body: TabBarView(
-            children: [],
+            children: [Chats(), Chats(), Chats()],
           ),
         ),
       );
