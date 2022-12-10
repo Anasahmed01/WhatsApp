@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:whatsappclone/widget_classes.dart';
 
@@ -7,6 +9,8 @@ class Chats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton:
+          FloatingActionButton(onPressed: () {}, child: const Icon(Icons.chat)),
       backgroundColor: backgroundColor,
       body: Column(
         children: [
