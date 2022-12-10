@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whatsappclone/calls.dart';
 import 'package:whatsappclone/chats.dart';
+import 'package:whatsappclone/status.dart';
 import 'package:whatsappclone/widget_classes.dart';
 
 class HomeApp extends StatelessWidget {
@@ -40,8 +42,8 @@ class HomeApp extends StatelessWidget {
               indicatorWeight: 4,
             ),
           ),
-          body: TabBarView(
-            children: [Chats(), Chats(), Chats()],
+          body: const TabBarView(
+            children: [Chats(), Status(), Calls()],
           ),
         ),
       );

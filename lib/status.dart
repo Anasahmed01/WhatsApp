@@ -13,7 +13,7 @@ class Status extends StatelessWidget {
           ListTile(
             textColor: Colors.white,
             leading: const CircleAvatar(
-              backgroundImage: AssetImage("assets/images/bilalimage.png"),
+              backgroundImage: AssetImage("assets/images/2.jpg"),
             ),
             title: const Text('My Status'),
             subtitle: Text(
