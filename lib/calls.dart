@@ -10,27 +10,26 @@ class Calls extends StatelessWidget {
       backgroundColor: backgroundColor,
       body: Column(
         children: [
-          ListTile(
-            textColor: Colors.white,
-            leading: const CircleAvatar(
-              backgroundImage: AssetImage("assets/images/bilalimage.png"),
-            ),
-            title: const Text('Bilal'),
-            subtitle: Text(
-              'Han ho kitna kam kia beta',
-              style: TextStyle(color: textColor),
-            ),
-            trailing: Padding(
-              padding: const EdgeInsets.only(top: 10.0),
-              child: Column(
-                children: [
-                  Icon(
-                    Icons.push_pin_outlined,
-                    color: indicatorTextColor,
-                  )
-                ],
-              ),
-            ),
+          callsTile(
+            title: 'Bilal',
+            subtitle: 'Today,4:30 PM',
+            url: "assets/images/bilalimage.png",
+            icon: Icons.call,
+            icon2: Icons.arrow_downward_rounded,
+          ),
+          callsTile(
+            title: 'Bilal',
+            subtitle: 'Today,4:35 PM',
+            url: "assets/images/bilalimage.png",
+            icon: Icons.call,
+            icon2: Icons.arrow_downward_rounded,
+          ),
+          callsTile(
+            title: 'Bilal',
+            subtitle: 'Today,4:40 PM',
+            url: "assets/images/bilalimage.png",
+            icon: Icons.call,
+            icon2: Icons.arrow_downward_rounded,
           ),
         ],
       ),

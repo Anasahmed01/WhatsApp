@@ -20,7 +20,7 @@ Widget icons(icons) {
   );
 }
 
-Widget listtile(String title, String subtitle, String url, String time, icon) {
+Widget listTile(String title, String subtitle, String url, String time, icon) {
   return ListTile(
     textColor: Colors.white,
     leading: CircleAvatar(
@@ -46,7 +46,38 @@ Widget listtile(String title, String subtitle, String url, String time, icon) {
   );
 }
 
+Widget callsTile(
+    {required String title,
+    required String subtitle,
+    required String url,
+    required icon,
+    required icon2}) {
+  return ListTile(
+      textColor: Colors.white,
+      leading: CircleAvatar(
+        backgroundImage: AssetImage(url),
+      ),
+      title: Text(title),
+      subtitle: Row(
+        children: [
+          Icon(
+            icon2,
+            color: callIconColor,
+          ),
+          Text(
+            subtitle,
+            style: TextStyle(color: textColor),
+          )
+        ],
+      ),
+      trailing: Icon(
+        icon,
+        color: indicatorTextColor,
+      ));
+}
+
 var backgroundColor = const Color(0xff101D25);
 var appbarColor = const Color(0xff232D36);
 var textColor = const Color(0xff78818A);
 var indicatorTextColor = const Color.fromARGB(255, 16, 205, 142);
+var callIconColor = Colors.red;
