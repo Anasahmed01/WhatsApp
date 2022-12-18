@@ -5,7 +5,7 @@ Widget tabText(String text) {
     padding: const EdgeInsets.only(bottom: 10.0),
     child: Text(
       text,
-      style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
+      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
     ),
   );
 }
@@ -46,6 +46,16 @@ Widget listTile(String title, String subtitle, String url, String time, icon) {
   );
 }
 
+Widget flotingButton(icon) {
+  return FloatingActionButton(
+    backgroundColor: indicatorTextColor,
+    onPressed: () {},
+    child: Icon(
+      icon,
+    ),
+  );
+}
+
 Widget callsTile(
     {required String title,
     required String subtitle,
@@ -78,6 +88,6 @@ Widget callsTile(
 
 var backgroundColor = const Color(0xff101D25);
 var appbarColor = const Color(0xff232D36);
-var textColor = const Color(0xff78818A);
-var indicatorTextColor = const Color.fromARGB(255, 16, 205, 142);
+var textColor = Color.fromARGB(255, 142, 150, 158);
+var indicatorTextColor = Color.fromARGB(255, 13, 161, 111);
 var callIconColor = Colors.red;

@@ -32,14 +32,14 @@ class HomeApp extends StatelessWidget {
             ),
             bottom: TabBar(
               tabs: [
-                tabText('CHATS'),
-                tabText('STATUS'),
-                tabText('CALLS'),
+                tabText('Chats'),
+                tabText('Status'),
+                tabText('Calls'),
               ],
               indicatorColor: indicatorTextColor,
               labelColor: indicatorTextColor,
               unselectedLabelColor: textColor,
-              indicatorWeight: 4,
+              indicatorWeight: 3,
             ),
           ),
           body: const TabBarView(

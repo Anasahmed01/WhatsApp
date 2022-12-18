@@ -7,13 +7,7 @@ class Chats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: indicatorTextColor,
-        onPressed: () {},
-        child: const Icon(
-          Icons.chat,
-        ),
-      ),
+      floatingActionButton: flotingButton(Icons.chat),
       backgroundColor: backgroundColor,
       body: Column(
         children: [
