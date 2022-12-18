@@ -28,7 +28,7 @@ class Calls extends StatelessWidget {
               ),
               subtitle: Text(
                 'Share a link for your WhatsApp call',
-                style: TextStyle(color: whiteColor),
+                style: TextStyle(color: textColor),
               ),
             ),
           ),
