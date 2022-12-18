@@ -7,6 +7,13 @@ class Status extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          floatingButtonEdit(Icons.edit),
+          floatingButton(Icons.camera_alt_rounded)
+        ],
+      ),
       backgroundColor: backgroundColor,
       body: Column(
         children: [
