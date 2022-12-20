@@ -20,7 +20,7 @@ Widget icons(icons) {
   );
 }
 
-Widget listTile(String title, String subtitle, String url, String time, icon) {
+Widget listTile(String title, String subtitle, String url, String time) {
   return Padding(
     padding: const EdgeInsets.only(top: 8.0),
     child: ListTile(
@@ -29,23 +29,23 @@ Widget listTile(String title, String subtitle, String url, String time, icon) {
         radius: 25,
         backgroundImage: AssetImage(url),
       ),
-      title: Text(title,
-          style: TextStyle(
-              color: whiteColor, fontSize: 17, fontWeight: FontWeight.w500)),
+      title: Text(
+        title,
+        style: TextStyle(
+            color: whiteColor, fontSize: 17, fontWeight: FontWeight.w500),
+      ),
       subtitle: Text(
         subtitle,
         style: TextStyle(color: textColor),
       ),
       trailing: Padding(
         padding: const EdgeInsets.only(top: 10.0),
-        child: Column(
-          children: [
-            Text(time, style: TextStyle(color: textColor, fontSize: 12)),
-            Icon(
-              icon,
-              color: indicatorTextColor,
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 25.0),
+          child: Text(
+            time,
+            style: TextStyle(color: textColor, fontSize: 12),
+          ),
         ),
       ),
     ),
@@ -93,7 +93,11 @@ Widget callsTile(
           radius: 25,
           backgroundImage: AssetImage(url),
         ),
-        title: Text(title),
+        title: Text(
+          title,
+          style: const TextStyle(
+              fontSize: 17, fontWeight: FontWeight.w500, color: Colors.white),
+        ),
         subtitle: Row(
           children: [
             Padding(
@@ -114,6 +118,14 @@ Widget callsTile(
           icon,
           color: indicatorTextColor,
         )),
+  );
+}
+
+Widget title(String text) {
+  return Text(
+    text,
+    style: const TextStyle(
+        fontSize: 17, fontWeight: FontWeight.w500, color: Colors.white),
   );
 }
 

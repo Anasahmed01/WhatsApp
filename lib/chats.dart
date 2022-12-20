@@ -11,22 +11,13 @@ class Chats extends StatelessWidget {
       backgroundColor: backgroundColor,
       body: Column(
         children: [
-          listTile(
-              'Bilal',
-              'Kahan ho ajao aj class hai',
-              "assets/images/bilalimage.png",
-              '7:00 PM',
-              Icons.noise_control_off_outlined),
-          listTile('Anas', 'Han jani', "assets/images/anas.png", '8:00 PM',
-              Icons.noise_control_off_outlined),
+          listTile('Bilal', 'Kahan ho ajao aj class hai',
+              "assets/images/bilalimage.png", '7:00 PM'),
+          listTile('Anas', 'Han jani', "assets/images/anas.png", '8:00 PM'),
           listTile('Areeb', 'Or bhai kasay ho', "assets/images/areeb.png",
-              '9:20 PM', Icons.noise_control_off_outlined),
-          listTile(
-              'Humaiyon',
-              'Or kasi chal rahi hai Flutter',
-              "assets/images/Humaiyon.png",
-              '4:10 PM',
-              Icons.noise_control_off_outlined),
+              '9:20 PM'),
+          listTile('Humaiyon', 'Or kasi chal rahi hai Flutter',
+              "assets/images/Humaiyon.png", '4:10 PM'),
         ],
       ),
     );

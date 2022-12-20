@@ -41,7 +41,7 @@ class Status extends StatelessWidget {
                 ],
               ),
             ),
-            title: const Text('My Status'),
+            title: title('My status'),
             subtitle: Text(
               'Tab to add status update',
               style: TextStyle(color: textColor),
