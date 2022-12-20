@@ -5,7 +5,7 @@ Widget tabText(String text) {
     padding: const EdgeInsets.only(bottom: 10.0),
     child: Text(
       text,
-      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
     ),
   );
 }
